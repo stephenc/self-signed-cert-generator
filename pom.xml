@@ -34,7 +34,7 @@ THE SOFTWARE.
 
   <groupId>io.github.stephenc.crypto</groupId>
   <artifactId>self-signed-cert-generator</artifactId>
-  <version>1.0.1-SNAPSHOT</version>
+  <version>1.0.1</version>
   <packaging>jar</packaging>
 
   <name>Self-Signed Certificate Generator</name>
@@ -53,7 +53,7 @@ THE SOFTWARE.
     <connection>scm:git:git://github.com/stephenc/self-signed-cert-generator.git</connection>
     <developerConnection>scm:git:git@github.com:stephenc/self-signed-cert-generator.git</developerConnection>
     <url>http://github.com/stephenc/self-signed-cert-generator/tree/master/</url>
-    <tag>HEAD</tag>
+    <tag>self-signed-cert-generator-1.0.1</tag>
   </scm>
   <issueManagement>
     <system>github</system>
