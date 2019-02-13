@@ -38,7 +38,7 @@ THE SOFTWARE.
   <packaging>jar</packaging>
 
   <name>Self-Signed Certificate Generator</name>
-  <description>Library a shaded version of BouncyCastle and exposing an API to just generate self-signed certificates</description>
+  <description>Library using a shaded version of BouncyCastle and exposing an API to just generate self-signed certificates</description>
   <url>http://stephenc.github.io/self-signed-cert-generator</url>
   <inceptionYear>2016</inceptionYear>
   <licenses>
@@ -70,7 +70,7 @@ THE SOFTWARE.
     <dependency>
       <groupId>org.bouncycastle</groupId>
       <artifactId>bcpkix-jdk15on</artifactId>
-      <version>1.54</version>
+      <version>1.61</version>
       <optional>true</optional>
     </dependency>
     <dependency>
@@ -85,15 +85,15 @@ THE SOFTWARE.
     <plugins>
       <plugin>
         <artifactId>maven-compiler-plugin</artifactId>
-        <version>3.5.1</version>
+        <version>3.8.0</version>
         <configuration>
-          <source>1.6</source>
-          <target>1.6</target>
+          <source>1.5</source>
+          <target>1.5</target>
         </configuration>
       </plugin>
       <plugin>
         <artifactId>maven-failsafe-plugin</artifactId>
-        <version>2.19.1</version>
+        <version>2.22.1</version>
         <executions>
           <execution>
             <goals>
@@ -105,7 +105,7 @@ THE SOFTWARE.
       </plugin>
       <plugin>
         <artifactId>maven-shade-plugin</artifactId>
-        <version>2.4.3</version>
+        <version>3.2.1</version>
         <executions>
           <execution>
             <phase>package</phase>
@@ -142,7 +142,7 @@ THE SOFTWARE.
       </plugin>
       <plugin>
         <artifactId>maven-surefire-plugin</artifactId>
-        <version>2.19.1</version>
+        <version>2.22.1</version>
       </plugin>
     </plugins>
   </build>
